@@ -29,7 +29,7 @@ function Products({ products }) {
   return (
     <section>
       {
-        products?.model((product) => (
+        products?.map(({ id, name, price }) => (
           <article key={ product.id }>
             <p>{ product.name }</p>
             <p>{ product.price }</p>
