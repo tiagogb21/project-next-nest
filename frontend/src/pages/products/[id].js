@@ -30,9 +30,9 @@ function Products({ products }) {
     <section>
       {
         products?.map(({ id, name, price }) => (
-          <article key={ product.id }>
-            <p>{ product.name }</p>
-            <p>{ product.price }</p>
+          <article key={ id }>
+            <p>{ name }</p>
+            <p>{ price }</p>
           </article>
         ))
       }
