@@ -5,7 +5,7 @@ export async function getStaticPaths() {
   const products = await res.json()
 
   // Gaz o get dos paths que queremos pre-renderizar em produtos
-  const paths = posts.map((post) => ({
+  const paths = products.map((post) => ({
     params: { id: post.id },
   }))
 
